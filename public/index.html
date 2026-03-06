@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>P.S.R IT Timetable - Final Staff Update</title>
+    <style>
+        body { font-family: 'Times New Roman', serif; margin: 15px; background-color: #f4f4f4; color: #000; }
+       
+        .page-container {
+            background-color: #fff;
+            border: 2px solid #000;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-height: auto;
+            page-break-inside: avoid; /* Table and Signatures ore page-la varum */
+        }
+
+        .header-main { display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #000; padding-bottom: 5px; margin-bottom: 10px; gap: 10px; }
+        .logo-img { height: 75px; width: auto; flex-shrink: 0; }
+        .header-text { text-align: center; flex-grow: 0; padding: 0; margin: 0; }
+        .college-name { font-size: 21px; font-weight: bold; color: #000; margin: 0; padding: 0; }
+        .college-subtext { font-size: 9px; font-weight: bold; color: #ff0000; line-height: 1.1; margin: 2px 0; }
+        .college-address { font-size: 10.5px; font-weight: bold; margin: 2px 0; }
+        .dept-title { font-size: 14px; font-weight: bold; margin-top: 3px; text-decoration: underline; }
+       
+        .info-bar { display: flex; justify-content: space-between; font-weight: bold; font-size: 12px; margin-bottom: 5px; padding: 0 5px; border-bottom: 1px solid #000; }
+
+        table { width: 100%; border-collapse: collapse; margin-bottom: 15px; }
+        th, td { border: 1px solid #000; padding: 5px; text-align: center; font-size: 10px; }
+        th { background-color: #f8f9fa; font-weight: bold; }
+       
+        /* Specific alignment for Course Name and Faculty columns to stay left */
+        .f-row td:nth-child(2), .f-row td:nth-child(3) {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .time-label { font-size: 9.5px; color: #000; display: block; font-weight: 900; margin-top: 3px; border-top: 1.5px solid #000; padding-top: 2px; }
+        .category-header { text-align: left; font-weight: bold; background: #eee; padding-left: 8px; font-size: 11px; text-transform: uppercase; }
+        .light-blue-highlight { background-color: #add8e6 !important; font-weight: bold; border: 2px solid #2980b9 !important; }
+       
+        .signature-row { display: flex; justify-content: space-between; margin-top: 40px; font-weight: bold; font-size: 12px; padding: 0 50px; }
+       
+        .search-footer {
+            position: sticky;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff;
+            border-top: 3px solid #3498db;
+            border-radius: 10px 10px 0 0;
+            gap: 15px;
+            z-index: 1000;
+        }
+        input[type="text"] { padding: 12px; width: 350px; border: 1px solid #ccc; border-radius: 4px; font-size: 14px; }
+        .search-btn { background: #3498db; color: white; border: none; padding: 12px 30px; cursor: pointer; font-weight: bold; border-radius: 4px; }
+        .print-btn { background: #27ae60; color: white; border: none; padding: 12px 30px; cursor: pointer; font-weight: bold; border-radius: 4px; }
+       
+        @media print {
+            @page { margin: 0.5cm; }
+            .search-footer { display: none; }
+            .page-container { margin-bottom: 0; border: 2px solid #000; box-shadow: none; page-break-after: always; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-container">
+    <div class="header-main">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.RgHVaiinEPNuoOKZffWNSwHaGj?pid=ImgDet&w=165&h=145&c=7&o=7&rm=3" class="logo-img">
+        <div class="header-text">
+            <h1 class="college-name">P.S.R. ENGINEERING COLLEGE</h1>
+            <div class="college-subtext">
+                An Autonomous Institution, Affiliated to Anna University, Chennai<br>
+                Approved by AICTE, New Delhi & Accredited by National Board of Accreditation (NBA)<br>
+                Accredited by NAAC with "A+" Grade, Recognized under 12(B) of the UGC Act, 1956.<br>
+                An ISO 9001:2015 Certified Institution
+            </div>
+            <div class="college-address">SEVALPATTI (PO), SIVAKASI – 626 140, TAMILNADU.</div>
+            <div class="dept-title">DEPARTMENT OF INFORMATION TECHNOLOGY</div>
+            <div style="font-weight: bold; font-size: 11px; margin-top: 3px;">TIME TABLE – DECEMBER 2025<br>(ACADEMIC YEAR 2025 - 26 EVEN SEMESTER)</div>
+        </div>
+        <img src="https://images.seeklogo.com/logo-png/14/1/tuv-logo-png_seeklogo-143380.png" class="logo-img">
+    </div>
+
+    <div class="info-bar">
+        <span>Year/ Sem : II / IV</span>
+        <span>HALL No: SHS04</span>
+        <span>REV: 00</span>
+    </div>
+
+    <table id="grid-2">
+        <thead>
+            <tr><th>DAY</th><th>1<span class="time-label">9:00-9:50</span></th><th>2<span class="time-label">9:50-10:40</span></th><th>3<span class="time-label">10:50-11:40</span></th><th>4<span class="time-label">11:40-12:30</span></th><th>5<span class="time-label">1:10-2:00</span></th><th>6<span class="time-label">2:00-2:50</span></th><th>7<span class="time-label">3:00-3:50</span></th></tr>
+        </thead>
+        <tbody>
+            <tr><td>MON</td><td>231CS45</td><td>231CS42</td><td>231CS34</td><td>231CS41</td><td>231BS42</td><td>231IT41</td><td>231CS41</td></tr>
+            <tr><td>TUE</td><td>231BS42</td><td>231CS42</td><td>231CS34</td><td>231IT41</td><td colspan="2">231CS38 / 231CS47</td><td>-</td></tr>
+            <tr><td>WED</td><td>231CS41</td><td>231BS42</td><td>231CS42</td><td>231CS34</td><td>231CS45</td><td>NPTEL</td><td>231HS47</td></tr>
+            <tr><td>THU</td><td>231IT41</td><td colspan="3">231CS38 / 231CS45</td><td>231BS42</td><td>231CS34</td><td>TUTOR</td></tr>
+            <tr><td>FRI</td><td>231CS45</td><td>231CS34</td><td>231CS42</td><td>231BS42</td><td colspan="2">231CS45 / 231CS47</td><td>-</td></tr>
+        </tbody>
+    </table>
+    <table>
+        <thead><tr><th>COURSE CODE</th><th>COURSE NAME</th><th>FACULTY NAME</th><th>L</th><th>T</th><th>P</th><th>O</th><th>C</th></tr></thead>
+        <tbody>
+            <tr><td colspan="8" class="category-header">THEORY</td></tr>
+            <tr class="f-row"><td>231BS42</td><td>Probability and Statistics</td><td>Mr.M.Bala</td><td>4</td><td>1</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231CS41</td><td>Database Management Systems</td><td>Mr.T.Saravanan</td><td>4</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231CS42</td><td>Design and Analysis of Algorithms</td><td>Ms.P.Packiya Lakshmi</td><td>4</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231IT41</td><td>Communication Systems</td><td>Ms.M.Anitha</td><td>3</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231CS34</td><td>Object Oriented Programming using C++</td><td>Mr.S.Shunmuga Sundaram</td><td>4</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr><td colspan="8" class="category-header">THEORY CUM PRACTICAL</td></tr>
+            <tr class="f-row"><td>231CS45</td><td>Operating Systems</td><td>Dr.V.Selvakumar / Ms.S.Sumathi</td><td>3</td><td>-</td><td>3</td><td>-</td><td>4</td></tr>
+            <tr><td colspan="8" class="category-header">PRACTICAL</td></tr>
+            <tr class="f-row"><td>231CS47</td><td>Database Management Systems Laboratory</td><td>Mr.T.Saravanan / Dr.P.Edwin Dhas</td><td>-</td><td>-</td><td>3</td><td>-</td><td>1.5</td></tr>
+            <tr class="f-row"><td>231CS38</td><td>C++ Programming Laboratory</td><td>Mr.S.Shunmuga Sundaram / Ms.S.Sumathi</td><td>-</td><td>-</td><td>3</td><td>-</td><td>1.5</td></tr>
+            <tr class="f-row"><td>231HS47</td><td>Enhancing Aptitude and Reasoning Skills-II</td><td>Dr.V.Selvakumar</td><td>-</td><td>-</td><td>1</td><td>-</td><td>1*</td></tr>
+            <tr><td colspan="8" class="category-header">OTHERS</td></tr>
+            <tr class="f-row"><td>-</td><td>NPTEL</td><td>Ms.M.Anitha</td><td>-</td><td>-</td><td>-</td><td>1</td><td>-</td></tr>
+            <tr class="f-row"><td>-</td><td>TUTOR</td><td>Ms.S.Sumathi</td><td>-</td><td>-</td><td>-</td><td>1</td><td>-</td></tr>
+        </tbody>
+    </table>
+    <div class="signature-row"><div>CONVENER</div><div>HOD/IT</div><div>PRINCIPAL</div></div>
+</div>
+
+<div class="page-container">
+    <div class="header-main">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.RgHVaiinEPNuoOKZffWNSwHaGj?pid=ImgDet&w=165&h=145&c=7&o=7&rm=3" class="logo-img">
+        <div class="header-text">
+            <h1 class="college-name">P.S.R. ENGINEERING COLLEGE</h1>
+            <div class="college-subtext">
+                An Autonomous Institution, Affiliated to Anna University, Chennai<br>
+                Approved by AICTE, New Delhi & Accredited by National Board of Accreditation (NBA)<br>
+                Accredited by NAAC with "A+" Grade, Recognized under 12(B) of the UGC Act, 1956.<br>
+                An ISO 9001:2015 Certified Institution
+            </div>
+            <div class="college-address">SEVALPATTI (PO), SIVAKASI – 626 140, TAMILNADU.</div>
+            <div class="dept-title">DEPARTMENT OF INFORMATION TECHNOLOGY</div>
+            <div style="font-weight: bold; font-size: 11px; margin-top: 3px;">TIME TABLE – DECEMBER 2025 (III YEAR)</div>
+        </div>
+        <img src="https://images.seeklogo.com/logo-png/14/1/tuv-logo-png_seeklogo-143380.png" class="logo-img">
+    </div>
+
+    <div class="info-bar">
+        <span>Year/ Sem : III / VI</span>
+        <span>HALL No: SHS05</span>
+        <span>REV: 00</span>
+    </div>
+
+    <table id="grid-3">
+        <thead>
+            <tr><th>DAY</th><th>1<span class="time-label">9:00-9:50</span></th><th>2<span class="time-label">9:50-10:40</span></th><th>3<span class="time-label">10:50-11:40</span></th><th>4<span class="time-label">11:40-12:30</span></th><th>5<span class="time-label">1:10-2:00</span></th><th>6<span class="time-label">2:00-2:50</span></th><th>7<span class="time-label">3:00-3:50</span></th><th>8<span class="time-label">3:50-4:40</span></th></tr>
+        </thead>
+        <tbody>
+            <tr><td>MON</td><td>231ITV14</td><td>231ITV13</td><td>GATE</td><td>231IT63</td><td colspan="3">231IT64</td><td>231ITH03</td></tr>
+            <tr><td>TUE</td><td>231IT62</td><td>231OE3A</td><td colspan="2">231IT69</td><td>TUTOR</td><td>231IT62</td><td>231IT61</td><td>231ITH05</td></tr>
+            <tr><td>WED</td><td>231IT63</td><td>231IT61</td><td>GATE</td><td>231IT62</td><td>231OE3A</td><td>231ITV14</td><td>231ITV14</td><td>231ITH03</td></tr>
+            <tr><td>THU</td><td>231ITV14</td><td>231OE3A</td><td>231IT61</td><td>Placement</td><td colspan="3">231IT65</td><td>231ITH05</td></tr>
+            <tr><td>FRI</td><td>231ITV13</td><td>231IT62</td><td>231ITV14</td><td>231ITV13</td><td>231IT63</td><td>231IT61</td><td>NPTEL</td><td>231ITH03/05</td></tr>
+        </tbody>
+    </table>
+    <table>
+        <thead><tr><th>COURSE CODE</th><th>COURSE NAME</th><th>FACULTY NAME</th><th>L</th><th>T</th><th>P</th><th>O</th><th>C</th></tr></thead>
+        <tbody>
+            <tr><td colspan="8" class="category-header">THEORY & ELECTIVES</td></tr>
+            <tr class="f-row"><td>231IT61</td><td>Cloud and Edge Computing</td><td>Dr.R.Ramani</td><td>4</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231IT62</td><td>Web Technology</td><td>Ms.M.Anitha</td><td>4</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231IT63</td><td>Information Security</td><td>Ms.P.Packiya Lakshmi</td><td>3</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231ITV13</td><td>Python with MongoDB</td><td>Mr.T.Saravanan</td><td>4</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231ITV14</td><td>Enterprise Resource Planning</td><td>Ms.S.Sumathi</td><td>4</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr><td colspan="8" class="category-header">OPEN ELECTIVE - II (Staff List)</td></tr>
+            <tr class="f-row"><td>231OE1E</td><td>Data Structures using Python</td><td>Ms.T.Blessing Karunya</td><td>3</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231OE1F</td><td>Fundamentals of Databases</td><td>Mr.P.Gopalsamy</td><td>3</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231OE2F</td><td>Wearable Electronics</td><td>Dr.R.Jenitha</td><td>3</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231OE4C</td><td>Electrical Safety</td><td>Mr.D.Pandiaraj</td><td>3</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231OE5A</td><td>Food and Nutrition Technology</td><td>Dr.K.Venkadeswaran</td><td>3</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231OE7A</td><td>Fire Safety Engineering</td><td>Ms.T.Thilagalakshmi</td><td>3</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr><td colspan="8" class="category-header">PRACTICAL & HONORS</td></tr>
+            <tr class="f-row"><td>231IT64</td><td>Cloud Laboratory</td><td>Ms.P.Packiya Lakshmi / Mr.S.Shunmuga Sundaram</td><td>-</td><td>-</td><td>3</td><td>-</td><td>1.5</td></tr>
+            <tr class="f-row"><td>231IT65</td><td>Web Technology Laboratory</td><td>Ms.M.Anitha / Ms.P.Packiya Lakshmi</td><td>-</td><td>-</td><td>3</td><td>-</td><td>1.5</td></tr>
+            <tr class="f-row"><td>231IT69</td><td>Mini Project</td><td>Dr.P.Edwin Dhas</td><td>-</td><td>-</td><td>2</td><td>-</td><td>1</td></tr>
+            <tr class="f-row"><td>231ITH03</td><td>Software Application Development</td><td>Ms.S.Sumathi</td><td>5</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr class="f-row"><td>231ITH05</td><td>Intelligent Agents</td><td>Mr.S.Shunmuga Sundaram</td><td>5</td><td>-</td><td>-</td><td>-</td><td>3</td></tr>
+            <tr><td colspan="8" class="category-header">OTHERS</td></tr>
+            <tr class="f-row"><td>-</td><td>NPTEL</td><td>Mr.S.Shunmuga Sundaram</td><td>-</td><td>-</td><td>-</td><td>1</td><td>-</td></tr>
+            <tr class="f-row"><td>-</td><td>Placement</td><td>Ms.M.Anitha</td><td>-</td><td>-</td><td>-</td><td>1</td><td>-</td></tr>
+            <tr class="f-row"><td>-</td><td>GATE</td><td>Dr.V.Selvakumar</td><td>-</td><td>-</td><td>-</td><td>2</td><td>-</td></tr>
+            <tr class="f-row"><td>-</td><td>TUTOR</td><td>Ms.P.Packiya Lakshmi</td><td>-</td><td>-</td><td>-</td><td>1</td><td>-</td></tr>
+        </tbody>
+    </table>
+    <div class="signature-row"><div>CONVENER</div><div>HOD/IT</div><div>PRINCIPAL</div></div>
+</div>
+
+<div class="search-footer">
+    <div class="search-container">
+        <label><strong>Staff Search:</strong></label>
+        <input type="text" id="facultySearch" placeholder="Enter Staff Name...">
+        <button class="search-btn" onclick="runSearch()">HIGHLIGHT STAFF</button>
+        <button class="print-btn" onclick="window.print()">PRINT</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById('facultySearch').addEventListener('input', function() {
+        const query = this.value.trim();
+        if (query === "") {
+            document.querySelectorAll('.light-blue-highlight').forEach(el => {
+                el.classList.remove('light-blue-highlight');
+            });
+        }
+    });
+
+    async function runSearch() {
+        const query = document.getElementById('facultySearch').value.trim();
+        if(!query) return;
+        document.querySelectorAll('.light-blue-highlight').forEach(el => el.classList.remove('light-blue-highlight'));
+        try {
+            const response = await fetch(`/api/staff-details?name=${query}`);
+            const results = await response.json();
+            if(results.length === 0) { alert("Staff not found in Database!"); return; }
+            const matchingCodes = [];
+            results.forEach(row => {
+                document.querySelectorAll('.f-row').forEach(dRow => {
+                    if(dRow.innerText.toLowerCase().includes(row.faculty_name.toLowerCase())) {
+                        dRow.classList.add('light-blue-highlight');
+                    }
+                });
+                if (row.course_code && row.course_code !== '-') {
+                    matchingCodes.push(row.course_code.toUpperCase());
+                }
+            });
+            document.querySelectorAll('#grid-2 td, #grid-3 td').forEach(cell => {
+                const cellText = cell.innerText.trim().toUpperCase();
+                matchingCodes.forEach(code => {
+                    if (cellText.includes(code)) cell.classList.add('light-blue-highlight');
+                });
+                if (query.toLowerCase() === 'tutor' && cellText.includes('TUTOR')) cell.classList.add('light-blue-highlight');
+                if (query.toLowerCase() === 'gate' && cellText.includes('GATE')) cell.classList.add('light-blue-highlight');
+                if (query.toLowerCase() === 'nptel' && cellText.includes('NPTEL')) cell.classList.add('light-blue-highlight');
+            });
+        } catch (err) { console.error("Fetch Error:", err); }
+    }
+</script>
+</body>
+</html>
